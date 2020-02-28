@@ -11,7 +11,7 @@ header {
 .container {
     height: 100%;
     max-width: 100%;
-    background-color: green;
+    background-color: lightgray;
 }
 
 .clearfix::after {
@@ -24,7 +24,15 @@ header {
     height: 100%;
     width: 20%;
     float: left;
-    background-color: red;
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-left img {
+    height: 60px;
+    width: 230px;
 }
 
 .header-right {
@@ -41,6 +49,8 @@ header {
 .menu a {
     text-transform:uppercase;
     text-decoration:none;
+    font-family: Rubik,sans-serif;
+    color: dimgrey;
 }
 
 .menu-item {
@@ -50,11 +60,23 @@ header {
 }
 
 .dropdown-menu {
-    display: none;
+    /* display: none; */
     position: absolute;
     top:30px;
+    left: -15px;
+    text-align: center;
+    font-size: 15px;
+    padding-top: 15px;
+    border-radius: 10px;
+    background-color: aliceblue;
+    height: 200px;
+    width: 120px;
 }
 
 .dropdown-menu-item {
-    display: flex;
+    padding: 10px;
+}
+
+.dropdown-menu-item a {
+    color: darkorange;
 }
