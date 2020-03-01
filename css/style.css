@@ -67,6 +67,10 @@ header {
     transition: transform 0.5s;
 }
 
+#f107.ruota::after {
+    transform: rotate(180deg);
+}
+
 .dropdown-menu {
     display: none;
     position: absolute;
